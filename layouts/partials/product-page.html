@@ -1,0 +1,70 @@
+<!-- Product page partial — used for Lisa, Thomas, Sarah -->
+{{ $productClass := .Params.productClass | default "lisa" }}
+{{ $color       := .Params.color | default "var(--hl-yellow)" }}
+{{ $emoji       := .Params.emoji | default "📋" }}
+{{ $role        := .Params.role | default "AI-werknemer" }}
+{{ $price       := .Params.price | default "297" }}
+
+<!-- Hero -->
+<section class="product-hero {{ $productClass }}">
+  <div class="container">
+    <div class="product-hero-inner">
+
+      <div class="product-hero-text fade-up">
+        <div class="product-hero-tag">{{ $emoji }} {{ $role }}</div>
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Params.description }}</p>
+        <div class="product-hero-price">
+          <span class="price-amount">€{{ $price }}</span>
+          <span class="price-period">/maand — alles inbegrepen</span>
+        </div>
+        <div class="hero-actions">
+          <a href="/contact" class="btn btn-primary btn-lg">Plan een gesprek →</a>
+          <a href="/#werknemers" class="btn btn-secondary">Bekijk alle werknemers</a>
+        </div>
+      </div>
+
+      <div class="product-hero-visual fade-up">
+        {{ .Params.visual | safeHTML }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features grid -->
+<section style="background: var(--surface); border-top: 1px solid var(--border); padding: 80px 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label">Wat {{ .Params.firstName | default "de AI" }} doet</span>
+      <h2>{{ .Params.featuresHeading | default "Alles op autopilot" }}</h2>
+      <p class="lead">{{ .Params.featuresSub | default "" }}</p>
+    </div>
+    <div class="feature-list fade-up">
+      {{ range .Params.features }}
+      <div class="feature-item">
+        <div class="feature-item-icon">{{ .icon }}</div>
+        <h4>{{ .title }}</h4>
+        <p>{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Prose content -->
+{{ with .Content }}
+<div class="prose">
+  <div class="prose-content container--narrow">
+    {{ . }}
+  </div>
+</div>
+{{ end }}
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Klaar om {{ .Params.firstName | default "deze AI" }} in te huren?</h2>
+    <p class="lead">Plan een vrijblijvend gesprek van 20 minuten. We regelen de setup binnen 48 uur.</p>
+    <a href="/contact" class="btn btn-hl btn-lg">Plan een gesprek →</a>
+  </div>
+</section>

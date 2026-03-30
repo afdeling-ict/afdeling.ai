@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<!-- Product pages (lisa, thomas, sarah) have custom layouts -->
+{{ if eq .Type "product" }}
+{{ partial "product-page.html" . }}
+
+<!-- Legal / static pages use prose layout -->
+{{ else if or (eq .Slug "privacy") (eq .Slug "voorwaarden") }}
+<section class="page-hero">
+  <div class="container--narrow">
+    <span class="label">{{ .Params.label | default "Juridisch" }}</span>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+<div class="prose">
+  <div class="prose-content container--narrow">
+    {{ .Content }}
+  </div>
+</div>
+
+<!-- Generic single page -->
+{{ else }}
+<section class="page-hero">
+  <div class="container">
+    {{ with .Params.label }}<span class="label">{{ . }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<div class="prose">
+  <div class="prose-content container--narrow">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}
+
+{{ end }}

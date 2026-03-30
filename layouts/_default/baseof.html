@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="{{ if .IsHome }}page-home{{ else }}page-{{ .Type }}{{ end }}">
+  {{ partial "nav.html" . }}
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>

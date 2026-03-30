@@ -1,0 +1,29 @@
+# afdeling.ai — LLM-friendly site overview
+
+## Wat is afdeling.ai?
+
+afdeling.ai levert AI-werknemers voor het Nederlandse MKB. Drie gespecialiseerde AI-medewerkers:
+
+- **Lisa** (€297/maand): AI Offertespecialist — genereert automatisch PDF-offertes uit e-mailaanvragen binnen 2 minuten
+- **Thomas** (€497/maand): AI Klantenservice Assistent — beantwoordt klantvragen 24/7 via chat en e-mail
+- **Sarah** (€397/maand): AI Social Media Manager — schrijft en plant wekelijks content op LinkedIn en Facebook
+
+## Positionering
+
+Geen IT-kennis nodig. Setup in 48 uur. Maandelijks opzegbaar. Voor MKB-bedrijven die repetitief werk willen automatiseren zonder een IT-afdeling nodig te hebben.
+
+## Pagina's
+
+- / — Homepage
+- /lisa — Lisa productpagina
+- /thomas — Thomas productpagina
+- /sarah — Sarah productpagina
+- /blog — Blog
+- /over — Over afdeling.ai
+- /contact — Contact en kennismakingsgesprek plannen
+- /privacy — Privacybeleid
+- /voorwaarden — Algemene voorwaarden
+
+## Contact
+
+hallo@afdeling.ai — Gevestigd in Nederland

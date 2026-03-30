@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <span class="label">Blog</span>
+    <h1>Inzichten over AI en MKB</h1>
+    <p class="lead">Praktische artikelen over hoe Nederlandse bedrijven AI-werknemers inzetten om tijd te besparen en slimmer te werken.</p>
+  </div>
+</section>
+
+<section style="padding: 64px 0 80px;">
+  <div class="container">
+    {{ if .Pages }}
+    <div class="blog-grid fade-up">
+      {{ range .Pages }}
+      <article class="blog-card">
+        <div class="blog-card-header">
+          {{ .Params.emoji | default "✍️" }}
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>{{ .Date.Format "2 jan 2006" }}</span>
+            {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
+          </div>
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Params.description | default (.Summary | truncate 120) }}</p>
+          <a href="{{ .Permalink }}" class="blog-read-more">Lees meer →</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div style="text-align: center; padding: 80px 0;">
+      <p style="font-size: 3rem; margin-bottom: 16px;">✍️</p>
+      <h3 style="margin-bottom: 12px;">Artikelen komen eraan</h3>
+      <p class="text-muted">We schrijven momenteel aan onze eerste posts. Kom binnenkort terug!</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

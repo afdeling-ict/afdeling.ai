@@ -1,0 +1,114 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{{ $title := .Title }}
+{{ if .IsHome }}
+  {{ $title = site.Title }}
+{{ else }}
+  {{ $title = printf "%s — %s" .Title site.Title }}
+{{ end }}
+<title>{{ $title }}</title>
+
+{{ $desc := .Params.description | default site.Params.description }}
+<meta name="description" content="{{ $desc }}">
+<meta name="author" content="{{ site.Params.author }}">
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="nl_NL">
+{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+
+<!-- Fonts: Plus Jakarta Sans + DM Mono -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="{{ "img/favicon.svg" | relURL }}">
+
+<!-- Schema.org JSON-LD -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "afdeling.ai",
+  "url": "https://afdeling.ai",
+  "description": "{{ site.Params.description }}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "{{ site.Params.email }}",
+    "contactType": "customer service",
+    "availableLanguage": "Dutch"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Lisa — AI Offertespecialist",
+      "price": "297",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "297",
+        "priceCurrency": "EUR",
+        "billingIncrement": 1,
+        "unitCode": "MON"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Thomas — AI Klantenservice",
+      "price": "497",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "497",
+        "priceCurrency": "EUR",
+        "billingIncrement": 1,
+        "unitCode": "MON"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Sarah — AI Social Media Manager",
+      "price": "397",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "397",
+        "priceCurrency": "EUR",
+        "billingIncrement": 1,
+        "unitCode": "MON"
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ $title }}",
+  "description": "{{ $desc }}",
+  "url": "{{ .Permalink }}"
+}
+</script>
+{{ end }}

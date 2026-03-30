@@ -1,0 +1,62 @@
+baseURL = "https://afdeling.ai"
+languageCode = "nl"
+title = "afdeling.ai"
+defaultContentLanguage = "nl"
+enableRobotsTXT = true
+enableGitInfo = false
+
+[params]
+  description = "Huur AI-werknemers voor jouw bedrijf. Lisa, Thomas en Sarah handelen offertes, klantenservice en social media af — zodat jij je focust op wat telt."
+  tagline = "De AI Afdeling voor MKB"
+  email = "hallo@afdeling.ai"
+  ctaText = "Plan een gesprek"
+  ctaURL = "/contact"
+  author = "Farid Bouchdak"
+
+[menu]
+  [[menu.main]]
+    name = "AI-werknemers"
+    url = "/werknemers"
+    weight = 1
+  [[menu.main]]
+    name = "Lisa"
+    url = "/lisa"
+    weight = 2
+    parent = "AI-werknemers"
+  [[menu.main]]
+    name = "Thomas"
+    url = "/thomas"
+    weight = 3
+    parent = "AI-werknemers"
+  [[menu.main]]
+    name = "Sarah"
+    url = "/sarah"
+    weight = 4
+    parent = "AI-werknemers"
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 5
+  [[menu.main]]
+    name = "Over"
+    url = "/over"
+    weight = 6
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 7
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokailight"
