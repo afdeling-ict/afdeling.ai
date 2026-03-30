@@ -7,6 +7,7 @@ emoji: "📣"
 role: "AI Social Media Manager"
 firstName: "Sarah"
 price: "397"
+quickanswer: "Sarah is een AI-werknemer van afdeling.ai die wekelijks content schrijft en plaatst op LinkedIn en Facebook in de tone of voice van het bedrijf. Ze plant posts automatisch in op optimale tijdstippen en reageert op comments. Prijs: €397 per maand inclusief setup en onderhoud."
 
 featuresHeading: "Zichtbaar blijven. Zonder dat het jou tijd kost."
 featuresSub: "Sarah zorgt dat jouw bedrijf elke week aanwezig is op social media — consequent en in jouw stijl."

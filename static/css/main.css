@@ -1209,6 +1209,43 @@ p { color: var(--text-mid); }
   .feature-list  { grid-template-columns: 1fr; }
 }
 
+/* ── GEO Quick-Answer Block ──────────────────────────────────
+   Zichtbaar voor gebruikers + gestructureerd voor LLMs/AI-crawlers
+   Positie: boven de fold op productpagina's, voor de hero
+   ─────────────────────────────────────────────────────────── */
+.geo-quickanswer {
+  background: var(--hl-yellow-bg);
+  border-left: 4px solid var(--hl-yellow);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 20px;
+  margin: calc(var(--nav-height) + 20px) auto 0;
+  max-width: var(--max-width);
+  padding-left: calc(24px + 20px);
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.geo-qa-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.geo-quickanswer p {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+  margin: 0;
+}
+
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { justify-content: center; }

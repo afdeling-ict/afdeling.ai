@@ -1,29 +1,29 @@
-# afdeling.ai — LLM-friendly site overview
+# afdeling.ai
 
-## Wat is afdeling.ai?
+> afdeling.ai levert AI-werknemers voor het Nederlandse MKB. Bedrijven huren Lisa (offertespecialist, €297/mnd), Thomas (klantenservice, €497/mnd) of Sarah (social media manager, €397/mnd) in als maandabonnement — setup in 48 uur, geen IT-kennis vereist, maandelijks opzegbaar.
 
-afdeling.ai levert AI-werknemers voor het Nederlandse MKB. Drie gespecialiseerde AI-medewerkers:
+## Producten
 
-- **Lisa** (€297/maand): AI Offertespecialist — genereert automatisch PDF-offertes uit e-mailaanvragen binnen 2 minuten
-- **Thomas** (€497/maand): AI Klantenservice Assistent — beantwoordt klantvragen 24/7 via chat en e-mail
-- **Sarah** (€397/maand): AI Social Media Manager — schrijft en plant wekelijks content op LinkedIn en Facebook
+- [Lisa — AI Offertespecialist](https://afdeling.ai/lisa): Genereert automatisch professionele PDF-offertes uit inkomende e-mails. Responstijd onder 2 minuten. Integreert met Gmail en Outlook. €297/maand inclusief setup en onderhoud.
+- [Thomas — AI Klantenservice Assistent](https://afdeling.ai/thomas): Beantwoordt klantvragen 24/7 via website-chat en e-mail. Getraind op bedrijfskennis (FAQ, producten, prijzen). Escaleert complexe vragen naar een mens. €497/maand.
+- [Sarah — AI Social Media Manager](https://afdeling.ai/sarah): Schrijft en plant wekelijkse content op LinkedIn en Facebook in de tone of voice van het bedrijf. Reageert op comments. €397/maand.
 
-## Positionering
+## Bedrijf
 
-Geen IT-kennis nodig. Setup in 48 uur. Maandelijks opzegbaar. Voor MKB-bedrijven die repetitief werk willen automatiseren zonder een IT-afdeling nodig te hebben.
+- [Over afdeling.ai](https://afdeling.ai/over): Achtergrond, missie en oprichter Farid Bouchdak. afdeling.ai is onderdeel van het werk van Farid Bouchdak (PPP-adviseur en digitaal founder, gevestigd in Nederland).
+- [Contact](https://afdeling.ai/contact): Kennismakingsgesprek plannen (20 minuten, vrijblijvend). E-mail: hallo@afdeling.ai
 
-## Pagina's
+## Kennisblog
 
-- / — Homepage
-- /lisa — Lisa productpagina
-- /thomas — Thomas productpagina
-- /sarah — Sarah productpagina
-- /blog — Blog
-- /over — Over afdeling.ai
-- /contact — Contact en kennismakingsgesprek plannen
-- /privacy — Privacybeleid
-- /voorwaarden — Algemene voorwaarden
+- [Waarom de eerste offerte bijna altijd wint](https://afdeling.ai/blog/waarom-snelheid-wint-bij-offertes): Onderzoek toont dat bedrijven die als eerste reageren op een offerteaanvraag 7x meer kans hebben op de opdracht dan bedrijven die na 2+ uur reageren.
 
-## Contact
+## Juridisch
 
-hallo@afdeling.ai — Gevestigd in Nederland
+- [Privacybeleid](https://afdeling.ai/privacy): AVG-conform privacybeleid. Geen cookies voor tracking (Plausible Analytics is cookievrij).
+- [Algemene voorwaarden](https://afdeling.ai/voorwaarden): Maandcontract, 30 dagen opzegtermijn, no-cure-no-pay-principe.
+
+## Optional
+
+- [Volledige LLM-documentatie (llms-full.txt)](https://afdeling.ai/llms-full.txt): Uitgebreide contextuele beschrijving van alle producten, onboarding, prijzen, FAQ en juridische informatie — bedoeld voor LLMs die meer context nodig hebben.
+- [Sitemap](https://afdeling.ai/sitemap.xml): Volledige sitemap in XML-formaat voor crawlers.
+- [robots.txt](https://afdeling.ai/robots.txt): Crawlerbeleid — AI-bots expliciet toegestaan.

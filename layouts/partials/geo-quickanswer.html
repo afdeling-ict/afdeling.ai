@@ -1,0 +1,16 @@
+{{/*
+  GEO Quick-Answer blok
+  Plaatsing: boven de fold op elke pagina
+  Doel: LLMs en AI-zoekmachines extraheren dit direct als antwoord
+  Gebruik: {{ partial "geo-quickanswer.html" . }}
+  Verwachte front matter: .Params.quickanswer (string)
+*/}}
+{{ with .Params.quickanswer }}
+<div class="geo-quickanswer" aria-label="Samenvatting" role="note"
+     itemscope itemtype="https://schema.org/DefinedTerm">
+  <span class="geo-qa-label">
+    <span aria-hidden="true">⚡</span> Kort antwoord
+  </span>
+  <p itemprop="description">{{ . }}</p>
+</div>
+{{ end }}

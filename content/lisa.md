@@ -7,6 +7,7 @@ emoji: "📋"
 role: "AI Offertespecialist"
 firstName: "Lisa"
 price: "297"
+quickanswer: "Lisa is een AI-werknemer van afdeling.ai die automatisch professionele PDF-offertes genereert vanuit inkomende e-mailaanvragen. Responstijd: onder 2 minuten. Prijs: €297 per maand inclusief setup, training en onderhoud. Geen IT-kennis vereist, live in 48 uur, maandelijks opzegbaar."
 
 featuresHeading: "Offerte aanvraag binnen? Lisa regelt het."
 featuresSub: "Geen vertraging meer. Geen 'ik stuur het morgen'. Lisa stuurt vandaag."

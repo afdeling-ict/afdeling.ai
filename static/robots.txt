@@ -1,14 +1,88 @@
+# robots.txt — afdeling.ai
+# Bijgewerkt: 2026-03-30
+# AI-crawlers zijn expliciet welkom — afdeling.ai is gebouwd voor zichtbaarheid in AI-zoekmachines
+
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-# AI crawlers explicitly welcome
-User-agent: GPTBot
+# ── Google (standaard + AI) ──────────────────────────────────
+User-agent: Googlebot
+Allow: /
+
+# Google AI Overviews / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# ── Anthropic / Claude ───────────────────────────────────────
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
+# ── OpenAI / ChatGPT ─────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Perplexity ────────────────────────────────────────────────
 User-agent: PerplexityBot
 Allow: /
 
+# ── Meta / Llama ─────────────────────────────────────────────
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# ── Microsoft / Bing / Copilot ───────────────────────────────
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# ── Apple ────────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Amazon / Alexa ───────────────────────────────────────────
+User-agent: Amazonbot
+Allow: /
+
+# ── Cohere ───────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+# ── You.com ──────────────────────────────────────────────────
+User-agent: YouBot
+Allow: /
+
+# ── Common Crawl (trainingdata) ──────────────────────────────
+User-agent: CCBot
+Allow: /
+
+# ── Bytedance / TikTok ───────────────────────────────────────
+User-agent: Bytespider
+Allow: /
+
+# ── Diffbot ──────────────────────────────────────────────────
+User-agent: Diffbot
+Allow: /
+
+# ── Sitemap ──────────────────────────────────────────────────
 Sitemap: https://afdeling.ai/sitemap.xml

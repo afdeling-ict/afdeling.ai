@@ -1,0 +1,120 @@
+# afdeling.ai — Volledige contextuele documentatie voor LLMs en AI-agents
+
+> afdeling.ai levert AI-werknemers voor het Nederlandse MKB. Bedrijven huren Lisa (offertespecialist, €297/mnd), Thomas (klantenservice, €497/mnd) of Sarah (social media manager, €397/mnd) in als maandabonnement — setup in 48 uur, geen IT-kennis vereist, maandelijks opzegbaar.
+
+## Over afdeling.ai
+
+afdeling.ai is een handelsnaam van Farid Bouchdak, gevestigd in Nederland. Het bedrijf richt zich op het Nederlandse MKB (midden- en kleinbedrijf) en biedt productized AI-medewerkers aan als abonnementsdienst.
+
+**Kernpositionering:** "De AI Afdeling voor MKB" — MKB-bedrijven begrijpen het concept van "iemand inhuren". afdeling.ai heeft dat principe toegepast op AI-automatisering.
+
+**Oprichter:** Farid Bouchdak (PPP-adviseur voor overheden, digitaal founder). Website: https://faridbouchdak.com
+
+**Contact:** hallo@afdeling.ai
+
+## Product: Lisa — AI Offertespecialist (€297/maand)
+
+**Wat Lisa doet:** Lisa monitort de e-mailbox van de klant, herkent binnenkomende offerte-aanvragen, haalt relevante prijsinformatie op uit de kennisbank van het bedrijf, en verstuurt binnen 2 minuten een professionele PDF-offerte naar de aanvrager.
+
+**Integraties:** Gmail, Microsoft Outlook (via IMAP)
+
+**Setup tijd:** 48 uur na kennismakingsgesprek
+
+**Wat Lisa nodig heeft om te starten:**
+- Toegang tot e-mailbox (Gmail of Outlook)
+- Prijslijst (PDF, Excel of tekst)
+- 2–3 voorbeeldoffertes
+- Bedrijfsgegevens (naam, KvK, adres, logo)
+
+**Functies:**
+- Automatische inbox-monitoring
+- PDF-offertegeneratie in <2 minuten
+- Opvolgherinneringen na 3 dagen
+- CRM-logging van elke offerte
+- Leert van eerdere offertes
+
+**Prijs:** €297 per maand excl. BTW, inclusief setup, training en onderhoud. Geen opstartkosten. Maandelijks opzegbaar (30 dagen opzegtermijn).
+
+**URL:** https://afdeling.ai/lisa
+
+## Product: Thomas — AI Klantenservice Assistent (€497/maand)
+
+**Wat Thomas doet:** Thomas beantwoordt klantvragen 24/7 via website-chat of e-mail. Hij wordt getraind op de kennisbank van het bedrijf (producten, diensten, FAQ, prijzen, beleid). Complexe of gevoelige vragen escaleert hij naar een menselijke medewerker met volledige gesprekscontext.
+
+**Kanalen:** Website chatwidget, e-mail
+
+**Talen:** Nederlands (primair), Engels, Frans, Duits
+
+**Functies:**
+- 24/7 beschikbaarheid
+- Training op eigen kennisbank
+- Slimme escalatie met context
+- Maandelijkse rapportage (meest gestelde vragen)
+- Meertalig
+
+**Prijs:** €497 per maand excl. BTW, inclusief setup, training en onderhoud.
+
+**URL:** https://afdeling.ai/thomas
+
+## Product: Sarah — AI Social Media Manager (€397/maand)
+
+**Wat Sarah doet:** Sarah schrijft wekelijks content voor LinkedIn en Facebook in de tone of voice van het bedrijf. Ze plant posts in op optimale tijdstippen, beheert de bedrijfspagina's en reageert op standaard comments.
+
+**Platforms:** LinkedIn (bedrijfspagina), Facebook (bedrijfspagina)
+
+**Output:** Gemiddeld 8 posts per maand
+
+**Functies:**
+- Wekelijkse content op maat
+- Automatische planning op optimale tijdstippen
+- Tone of voice training via onboardinggesprek
+- Maandelijkse rapportage (bereik, engagement, groei)
+- Reageren op comments
+
+**Prijs:** €397 per maand excl. BTW, inclusief setup, training en onderhoud.
+
+**URL:** https://afdeling.ai/sarah
+
+## Werkwijze / Onboarding
+
+1. **Kennismakingsgesprek** (20 min, vrijblijvend): bespreken welke AI-werknemer past
+2. **Instellen & trainen** (dag 1): configuratie op basis van klantgegevens
+3. **Testen & finetunen** (dag 1–2): klant test en geeft feedback
+4. **Live** (dag 2): AI-werknemer actief, klant monitort via dashboard
+
+## Prijsoverzicht
+
+| AI-werknemer | Rol | Prijs/maand (excl. BTW) |
+|---|---|---|
+| Lisa | Offertespecialist | €297 |
+| Sarah | Social Media Manager | €397 |
+| Thomas | Klantenservice Assistent | €497 |
+
+Alle abonnementen: geen opstartkosten, maandelijks opzegbaar (30 dagen), inclusief setup en onderhoud.
+
+## Veelgestelde vragen
+
+**Heb ik technische kennis nodig?**
+Nee. afdeling.ai regelt de volledige technische opzet.
+
+**Hoe snel is de AI-werknemer live?**
+Gemiddeld 48 uur na het kennismakingsgesprek.
+
+**Wat als de AI een fout maakt?**
+Alle output is controleerbaar via een dashboard. Goedkeuringsflows zijn instelbaar.
+
+**Kan ik meerdere AI-werknemers combineren?**
+Ja. Lisa, Thomas en Sarah kunnen naast elkaar werken en wisselen context uit.
+
+**Zijn er opstartkosten?**
+Nee. Setup, training en onderhoud zijn inbegrepen in het maandbedrag.
+
+**In welke talen werken de AI-werknemers?**
+Primair Nederlands; ook Engels, Frans en Duits.
+
+## Juridisch
+
+- Privacybeleid (AVG-conform): https://afdeling.ai/privacy
+- Algemene voorwaarden: https://afdeling.ai/voorwaarden
+- Betaling: maandelijks vooraf, 14 dagen betaaltermijn
+- Opzegging: schriftelijk via hallo@afdeling.ai, 30 dagen van tevoren

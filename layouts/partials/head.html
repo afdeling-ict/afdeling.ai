@@ -13,9 +13,14 @@
 {{ $desc := .Params.description | default site.Params.description }}
 <meta name="description" content="{{ $desc }}">
 <meta name="author" content="{{ site.Params.author }}">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
 <!-- Canonical -->
 <link rel="canonical" href="{{ .Permalink }}">
+
+<!-- hreflang (NL primary) -->
+<link rel="alternate" hreflang="nl" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
@@ -24,12 +29,16 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:locale" content="nl_NL">
-{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<meta property="og:image" content="{{ "img/social-preview.png" | absURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $title }}">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ "img/social-preview.png" | absURL }}">
 
 <!-- Fonts: Plus Jakarta Sans + DM Mono -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,73 +51,426 @@
 <!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="{{ "img/favicon.svg" | relURL }}">
 
-<!-- Schema.org JSON-LD -->
+<!-- ═══════════════════════════════════════════════════════
+     SCHEMA.ORG JSON-LD — Structured Data
+     Triple stack: Organization + Service/SoftwareApplication + FAQPage
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- 1. WebSite + SearchAction (alle pagina's) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "afdeling.ai",
+  "url": "https://afdeling.ai",
+  "description": "{{ site.Params.description }}",
+  "inLanguage": "nl-NL",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://afdeling.ai/blog/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 {{ if .IsHome }}
+<!-- 2. Organization — Homepage -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "afdeling.ai",
+  "legalName": "afdeling.ai",
   "url": "https://afdeling.ai",
-  "description": "{{ site.Params.description }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ "img/favicon.svg" | absURL }}",
+    "width": 32,
+    "height": 32
+  },
+  "description": "afdeling.ai levert AI-werknemers voor het Nederlandse MKB. Lisa (offertes), Thomas (klantenservice) en Sarah (social media) werken 24/7 voor €297–497 per maand.",
+  "foundingDate": "2025",
+  "foundingLocation": {
+    "@type": "Place",
+    "addressCountry": "NL"
+  },
   "contactPoint": {
     "@type": "ContactPoint",
-    "email": "{{ site.Params.email }}",
+    "email": "hallo@afdeling.ai",
     "contactType": "customer service",
-    "availableLanguage": "Dutch"
+    "availableLanguage": ["Dutch", "English"],
+    "areaServed": "NL"
   },
-  "offers": [
+  "sameAs": [
+    "https://faridbouchdak.com"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Farid Bouchdak",
+    "url": "https://faridbouchdak.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI-werknemers voor MKB",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Lisa — AI Offertespecialist",
+        "description": "Automatische offertegeneratie vanuit e-mail binnen 2 minuten. Setup in 48 uur.",
+        "url": "https://afdeling.ai/lisa",
+        "price": "297.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "297.00",
+          "priceCurrency": "EUR",
+          "billingIncrement": 1,
+          "unitCode": "MON",
+          "unitText": "per maand"
+        },
+        "seller": { "@type": "Organization", "name": "afdeling.ai" },
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Thomas — AI Klantenservice Assistent",
+        "description": "24/7 klantenservice via chat en e-mail, getraind op bedrijfskennis.",
+        "url": "https://afdeling.ai/thomas",
+        "price": "497.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "497.00",
+          "priceCurrency": "EUR",
+          "billingIncrement": 1,
+          "unitCode": "MON",
+          "unitText": "per maand"
+        },
+        "seller": { "@type": "Organization", "name": "afdeling.ai" },
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Sarah — AI Social Media Manager",
+        "description": "Wekelijkse LinkedIn en Facebook content in de merkstem van het bedrijf.",
+        "url": "https://afdeling.ai/sarah",
+        "price": "397.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "397.00",
+          "priceCurrency": "EUR",
+          "billingIncrement": 1,
+          "unitCode": "MON",
+          "unitText": "per maand"
+        },
+        "seller": { "@type": "Organization", "name": "afdeling.ai" },
+        "availability": "https://schema.org/InStock"
+      }
+    ]
+  }
+}
+</script>
+
+<!-- 3. ItemList — Productoverzicht (GEO: LLMs scannen ItemList voor gerangschikte lijsten) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "AI-werknemers van afdeling.ai voor MKB",
+  "description": "Drie gespecialiseerde AI-werknemers voor het Nederlandse MKB: offertes, klantenservice en social media.",
+  "numberOfItems": 3,
+  "itemListElement": [
     {
-      "@type": "Offer",
+      "@type": "ListItem",
+      "position": 1,
       "name": "Lisa — AI Offertespecialist",
-      "price": "297",
-      "priceCurrency": "EUR",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "297",
-        "priceCurrency": "EUR",
-        "billingIncrement": 1,
-        "unitCode": "MON"
-      }
+      "description": "Genereer automatisch professionele PDF-offertes vanuit inkomende e-mails. Responstijd onder 2 minuten. €297/maand.",
+      "url": "https://afdeling.ai/lisa"
     },
     {
-      "@type": "Offer",
-      "name": "Thomas — AI Klantenservice",
-      "price": "497",
-      "priceCurrency": "EUR",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "497",
-        "priceCurrency": "EUR",
-        "billingIncrement": 1,
-        "unitCode": "MON"
-      }
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Thomas — AI Klantenservice Assistent",
+      "description": "24/7 klantenservice via chat en e-mail. Getraind op bedrijfskennis, escaleert complexe zaken. €497/maand.",
+      "url": "https://afdeling.ai/thomas"
     },
     {
-      "@type": "Offer",
+      "@type": "ListItem",
+      "position": 3,
       "name": "Sarah — AI Social Media Manager",
-      "price": "397",
-      "priceCurrency": "EUR",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "397",
-        "priceCurrency": "EUR",
-        "billingIncrement": 1,
-        "unitCode": "MON"
+      "description": "Wekelijkse LinkedIn en Facebook posts in de tone of voice van het bedrijf, automatisch gepland. €397/maand.",
+      "url": "https://afdeling.ai/sarah"
+    }
+  ]
+}
+</script>
+
+<!-- 4. FAQPage — Homepage FAQ (GEO kritiek: LLMs citeren FAQPage direct) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Heb ik technische kennis nodig om een AI-werknemer in te zetten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. afdeling.ai regelt de volledige technische opzet. Jij geeft toegang tot je e-mail of systemen, en wij zorgen dat de AI-werknemer klaarstaat. Geen code, geen IT-afdeling nodig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel is een AI-werknemer van afdeling.ai live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gemiddeld 48 uur na het kennismakingsgesprek. afdeling.ai configureert en test de AI-werknemer samen met de klant voordat die live gaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kost een AI-werknemer van afdeling.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lisa (AI Offertespecialist) kost €297 per maand, Sarah (AI Social Media Manager) €397 per maand, en Thomas (AI Klantenservice) €497 per maand. Alle prijzen zijn exclusief BTW, inclusief setup en onderhoud. Maandelijks opzegbaar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik meerdere AI-werknemers van afdeling.ai combineren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Lisa, Thomas en Sarah kunnen naast elkaar werken en wisselen relevante context uit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "In welke taal communiceren de AI-werknemers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Primair Nederlands, maar ze kunnen ook communiceren in Engels, Frans of Duits afhankelijk van de taal van de klant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn er opstartkosten bij afdeling.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De maandprijs is alles-in. Setup, training, onderhoud en support zijn inbegrepen. Geen verborgen kosten."
       }
     }
   ]
 }
 </script>
-{{ end }}
-{{ if .IsPage }}
+
+{{ else if eq .Type "product" }}
+<!-- 2b. SoftwareApplication + Service — Productpagina's (Lisa / Thomas / Sarah) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "{{ $title }}",
-  "description": "{{ $desc }}",
-  "url": "{{ .Permalink }}"
+  "@graph": [
+    {
+      "@type": ["SoftwareApplication", "Service"],
+      "@id": "{{ .Permalink }}#product",
+      "name": "{{ .Title }} — {{ .Params.role }}",
+      "description": "{{ .Params.description }}",
+      "url": "{{ .Permalink }}",
+      "provider": {
+        "@type": "Organization",
+        "name": "afdeling.ai",
+        "url": "https://afdeling.ai"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "{{ .Params.price }}.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "{{ .Params.price }}.00",
+          "priceCurrency": "EUR",
+          "billingIncrement": 1,
+          "unitCode": "MON",
+          "unitText": "per maand"
+        },
+        "availability": "https://schema.org/InStock",
+        "seller": { "@type": "Organization", "name": "afdeling.ai" }
+      },
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "serviceType": "AI Automation",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Netherlands"
+      },
+      "inLanguage": "nl-NL",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "MKB / Small and Medium-sized Businesses in the Netherlands"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://afdeling.ai" },
+        { "@type": "ListItem", "position": 2, "name": "{{ .Title }}", "item": "{{ .Permalink }}" }
+      ]
+    }
+  ]
+}
+</script>
+
+{{ else if eq .Type "over" }}
+<!-- 2c. Person + Organization — Over pagina -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://faridbouchdak.com/#person",
+      "name": "Farid Bouchdak",
+      "url": "https://faridbouchdak.com",
+      "jobTitle": "Founder, afdeling.ai",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "afdeling.ai",
+        "url": "https://afdeling.ai"
+      },
+      "knowsAbout": ["AI automatisering", "MKB", "PPP-advies", "digitale infrastructuur"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://afdeling.ai" },
+        { "@type": "ListItem", "position": 2, "name": "Over", "item": "{{ .Permalink }}" }
+      ]
+    }
+  ]
+}
+</script>
+
+{{ else if eq .Section "blog" }}
+  {{ if .IsPage }}
+<!-- 2d. Article — Blog post -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "{{ .Permalink }}#article",
+      "headline": "{{ .Title }}",
+      "description": "{{ $desc }}",
+      "url": "{{ .Permalink }}",
+      "datePublished": "{{ .Date.Format "2006-01-02" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+      "author": {
+        "@type": "Person",
+        "name": "Farid Bouchdak",
+        "url": "https://faridbouchdak.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "afdeling.ai",
+        "url": "https://afdeling.ai",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ "img/favicon.svg" | absURL }}"
+        }
+      },
+      "inLanguage": "nl-NL",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://afdeling.ai" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://afdeling.ai/blog" },
+        { "@type": "ListItem", "position": 3, "name": "{{ .Title }}", "item": "{{ .Permalink }}" }
+      ]
+    }
+  ]
+}
+</script>
+  {{ else }}
+<!-- 2e. CollectionPage — Blog overzicht -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": "Blog — afdeling.ai",
+      "description": "Praktische artikelen over AI-werknemers voor het Nederlandse MKB.",
+      "url": "https://afdeling.ai/blog",
+      "inLanguage": "nl-NL",
+      "publisher": { "@type": "Organization", "name": "afdeling.ai", "url": "https://afdeling.ai" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://afdeling.ai" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://afdeling.ai/blog" }
+      ]
+    }
+  ]
+}
+</script>
+  {{ end }}
+
+{{ else if eq .Type "contact" }}
+<!-- 2f. ContactPage — Contact -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "name": "Contact — afdeling.ai",
+      "description": "Plan een vrijblijvend gesprek van 20 minuten over AI-werknemers voor jouw bedrijf.",
+      "url": "https://afdeling.ai/contact"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://afdeling.ai" },
+        { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://afdeling.ai/contact" }
+      ]
+    }
+  ]
+}
+</script>
+
+{{ else }}
+<!-- 2g. WebPage — overige pagina's (privacy, voorwaarden, etc.) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}#webpage",
+      "name": "{{ $title }}",
+      "description": "{{ $desc }}",
+      "url": "{{ .Permalink }}",
+      "inLanguage": "nl-NL",
+      "isPartOf": { "@type": "WebSite", "url": "https://afdeling.ai" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://afdeling.ai" },
+        { "@type": "ListItem", "position": 2, "name": "{{ .Title }}", "item": "{{ .Permalink }}" }
+      ]
+    }
+  ]
 }
 </script>
 {{ end }}

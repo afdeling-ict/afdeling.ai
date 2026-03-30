@@ -5,6 +5,9 @@
 {{ $role        := .Params.role | default "AI-werknemer" }}
 {{ $price       := .Params.price | default "297" }}
 
+<!-- GEO Quick-Answer (boven de fold — LLMs extraheren dit als directe answer) -->
+{{ partial "geo-quickanswer.html" . }}
+
 <!-- Hero -->
 <section class="product-hero {{ $productClass }}">
   <div class="container">
