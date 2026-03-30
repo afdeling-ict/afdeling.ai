@@ -40,10 +40,11 @@
 <meta name="twitter:description" content="{{ $desc }}">
 <meta name="twitter:image" content="{{ "img/social-preview.png" | absURL }}">
 
-<!-- Fonts: Plus Jakarta Sans + DM Mono -->
+<!-- Fonts: Plus Jakarta Sans + DM Mono (async — voorkomt render-blocking) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=DM+Mono:wght@400;500&display=swap" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=DM+Mono:wght@400;500&display=swap"></noscript>
 
 <!-- Stylesheet -->
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">

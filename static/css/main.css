@@ -286,13 +286,13 @@ p { color: var(--text-mid); }
   height: 8px;
   background: #22c55e;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(34,197,94,0.2);
-  animation: pulse 2s infinite;
+  animation: pulse 2s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
-  50% { box-shadow: 0 0 0 6px rgba(34,197,94,0.1); }
+  0%, 100% { transform: scale(1);   opacity: 1; }
+  50%       { transform: scale(1.6); opacity: 0.5; }
 }
 
 .hero h1 {
@@ -508,7 +508,7 @@ p { color: var(--text-mid); }
   display: block;
 }
 
-.step h4 { margin-bottom: 8px; font-size: 1rem; }
+.step h3 { margin-bottom: 8px; font-size: 1rem; }
 .step p  { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
 
 /* Connector line between steps */
@@ -568,7 +568,7 @@ p { color: var(--text-mid); }
 .why-item:nth-child(3) .why-item-icon { background: var(--hl-blue-bg); }
 .why-item:nth-child(4) .why-item-icon { background: var(--hl-pink-bg); }
 
-.why-item-text h4 { font-size: 1rem; margin-bottom: 4px; }
+.why-item-text h3 { font-size: 1rem; margin-bottom: 4px; }
 .why-item-text p  { font-size: 0.9rem; color: var(--muted); }
 
 .why-visual {
@@ -1055,7 +1055,7 @@ p { color: var(--text-mid); }
   font-size: 1.2rem;
   flex-shrink: 0;
 }
-.contact-way h4 { font-size: 0.9rem; margin-bottom: 2px; }
+.contact-way h3 { font-size: 0.9rem; margin-bottom: 2px; }
 .contact-way p, .contact-way a { font-size: 0.88rem; color: var(--muted); }
 
 /* ── Footer ────────────────────────────────────────────────── */
@@ -1091,7 +1091,7 @@ p { color: var(--text-mid); }
 .footer-contact a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .footer-col h4 {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.65);
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.07em;
@@ -1119,9 +1119,9 @@ p { color: var(--text-mid); }
 
 .footer-bottom p, .footer-sub {
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.55);
 }
-.footer-bottom a { color: rgba(255,255,255,0.6); }
+.footer-bottom a { color: rgba(255,255,255,0.8); text-decoration: underline; text-underline-offset: 3px; }
 .footer-bottom a:hover { color: #fff; }
 
 /* ── Utilities ─────────────────────────────────────────────── */
