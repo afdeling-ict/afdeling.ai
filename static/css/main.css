@@ -784,7 +784,13 @@ p { color: var(--text-mid); }
   text-align: center;
 }
 
-.cta-banner h2 { color: #fff; margin-bottom: 16px; }
+.cta-banner h2 { color: #fff; margin-bottom: 16px; overflow-wrap: break-word; }
+.hl-cta {
+  background: linear-gradient(transparent 55%, var(--hl-yellow) 55%);
+  padding: 0 2px;
+  border-radius: 2px;
+  color: #fff;
+}
 .cta-banner .lead { color: rgba(255,255,255,0.7); margin-bottom: 36px; }
 
 .cta-banner .btn-hl {
