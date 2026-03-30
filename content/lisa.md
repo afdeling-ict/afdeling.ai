@@ -37,14 +37,14 @@ visual: |
     <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em;">⚡ Lisa — Live preview</div>
     <div style="background: var(--bg); border-radius: 12px; border: 1px solid var(--border); padding: 16px;">
       <div style="font-size: 0.8rem; font-weight: 700; color: var(--text); margin-bottom: 4px;">Nieuwe e-mail ontvangen</div>
-      <div style="font-size: 0.8rem; color: var(--muted);">Van: erik@vanleeuwenbouw.nl</div>
+      <div style="font-size: 0.8rem; color: var(--muted);">Van: erik&#64;vanleeuwenbouw.nl</div>
       <div style="font-size: 0.8rem; color: var(--muted);">Onderwerp: Offerte aanvraag — dakkapel 2 stuks</div>
     </div>
     <div style="background: var(--hl-yellow-bg); border: 1.5px solid var(--hl-yellow); border-radius: 12px; padding: 16px;">
       <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">✅ Lisa — 1m 52s</div>
       <div style="font-size: 0.85rem; color: var(--text-mid); line-height: 1.6;">Offerte #2024-091 aangemaakt.<br>
       2x dakkapel standaard — €4.960 excl. BTW.<br>
-      PDF verstuurd naar erik@vanleeuwenbouw.nl.<br>
+      PDF verstuurd naar erik&#64;vanleeuwenbouw.nl.<br>
       Opvolging gepland: 18 mrt 2025.</div>
     </div>
     <div style="display: flex; gap: 8px;">
