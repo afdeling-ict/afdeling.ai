@@ -6,8 +6,7 @@ productClass: "lisa"
 emoji: "📋"
 role: "AI Offertespecialist"
 firstName: "Lisa"
-price: "297"
-quickanswer: "Lisa is een AI-werknemer van afdeling.ai die automatisch professionele PDF-offertes genereert vanuit inkomende e-mailaanvragen. Responstijd: onder 2 minuten. Prijs: €297 per maand inclusief setup, training en onderhoud. Geen IT-kennis vereist, live in 48 uur, maandelijks opzegbaar."
+quickanswer: "Lisa is een AI-werknemer van afdeling.ai die automatisch professionele PDF-offertes genereert vanuit inkomende e-mailaanvragen. Responstijd: onder 2 minuten. Prijs: Een fractie van de gebruikelijke loonkosten inclusief setup, training en onderhoud. Geen IT-kennis vereist, live in 48 uur, maandelijks opzegbaar."
 
 featuresHeading: "Offerte aanvraag binnen? Lisa regelt het."
 featuresSub: "Geen vertraging meer. Geen 'ik stuur het morgen'. Lisa stuurt vandaag."
@@ -30,7 +29,7 @@ features:
     description: "Lisa stuurt automatisch een vriendelijke herinnering als een offerte na 3 dagen nog niet is beantwoord."
   - icon: "🔗"
     title: "Integreert met Gmail & Outlook"
-    description: "Geen nieuwe software installeren. Lisa werkt via jouw bestaande e-mailomgeving."
+    description: "Geen nieuwe software installeren. Lisa werkt via jouw bestaande e-mailomgeving met een eigen emailadres."
 
 visual: |
   <div style="background: var(--surface); border-radius: 16px; border: 1.5px solid var(--border); padding: 24px; display: flex; flex-direction: column; gap: 16px;">
@@ -74,7 +73,7 @@ Lisa zorgt dat jij altijd als eerste reageert. Ook als de aanvraag binnenkomt op
 
 Lisa heeft bij de start het volgende nodig:
 
-- Toegang tot jouw e-mailbox (Gmail of Outlook)
+- Toegang tot een eigen e-mailadres (Gmail of Outlook)
 - Jouw huidige prijslijst (PDF, Excel of gewoon een tekst)
 - 2–3 voorbeelden van offertes die jij al hebt verstuurd
 - Jouw bedrijfsgegevens en KvK-nummer voor in de PDF
@@ -87,4 +86,4 @@ Stel je verstuurt gemiddeld 20 offertes per maand. Elke offerte heeft een waarde
 
 Als Lisa je responstijd terugbrengt van 24 uur naar 2 minuten, en daardoor je conversiepercentage met 5% stijgt — dan verdient Lisa zichzelf terug in de eerste week.
 
-**Lisa kost €297 per maand. Één extra opdracht per maand dekt dat meer dan.**
+**Lisa verdient zichzelf razendsnel terug. Eén extra opdracht per maand is al voldoende om de kosten volledig te dekken.**

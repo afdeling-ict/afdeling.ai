@@ -1,13 +1,12 @@
 ---
 title: "Sarah"
-description: "Sarah schrijft en plaatst wekelijks content op LinkedIn en Facebook in jouw tone of voice. Consistent zichtbaar, zonder dat jij er tijd in steekt."
+description: "Sarah schrijft en plaatst wekelijks content op LinkedIn en X (twitter) in jouw tone of voice. Consistent zichtbaar, zonder dat jij er tijd in steekt."
 type: "product"
 productClass: "sarah"
 emoji: "📣"
 role: "AI Social Media Manager"
 firstName: "Sarah"
-price: "397"
-quickanswer: "Sarah is een AI-werknemer van afdeling.ai die wekelijks content schrijft en plaatst op LinkedIn en Facebook in de tone of voice van het bedrijf. Ze plant posts automatisch in op optimale tijdstippen en reageert op comments. Prijs: €397 per maand inclusief setup en onderhoud."
+quickanswer: "Sarah is een AI-werknemer van afdeling.ai die wekelijks content schrijft en plaatst op LinkedIn en X (twitter) in de tone of voice van het bedrijf. Ze plant posts automatisch in op optimale tijdstippen en reageert op comments. Prijs: Een fractie van de gebruikelijke loonkosten inclusief setup en onderhoud."
 
 featuresHeading: "Zichtbaar blijven. Zonder dat het jou tijd kost."
 featuresSub: "Sarah zorgt dat jouw bedrijf elke week aanwezig is op social media — consequent en in jouw stijl."
@@ -15,16 +14,16 @@ featuresSub: "Sarah zorgt dat jouw bedrijf elke week aanwezig is op social media
 features:
   - icon: "✍️"
     title: "Wekelijkse posts op maat"
-    description: "Sarah schrijft relevante, engaging posts op basis van jouw bedrijfsnieuws, projecten en branche-updates."
+    description: "Sarah schrijft relevante, aantrekkelijke posts op basis van jouw bedrijfsnieuws, projecten en branche-updates."
   - icon: "🎨"
     title: "Consistent in jouw merkstem"
-    description: "We trainen Sarah op jouw tone of voice. De posts klinken als jij — niet als een AI."
+    description: "We trainen Sarah op jouw stijl. De posts klinken als jij — niet als een AI."
   - icon: "📅"
     title: "Automatische planning"
-    description: "Sarah plant posts in op de optimale tijdstippen voor maximale reach — jij hoeft niks handmatig te plaatsen."
+    description: "Sarah plant posts in op de optimale tijdstippen voor maximale zichtbaarheid — jij hoeft niks handmatig te plaatsen."
   - icon: "💼"
-    title: "LinkedIn + Facebook"
-    description: "Sarah beheert jouw bedrijfspagina's op LinkedIn en Facebook. Meer platforms zijn op aanvraag mogelijk."
+    title: "LinkedIn + X (Twitter)"
+    description: "Sarah beheert jouw bedrijfspagina's op LinkedIn en X. Meer platforms zijn op aanvraag mogelijk."
   - icon: "💬"
     title: "Reageert op comments"
     description: "Sarah monitort reacties en beantwoordt standaardvragen. Jij krijgt een melding bij complexe interacties."
@@ -41,7 +40,7 @@ visual: |
         <div style="font-size: 0.82rem; color: var(--text-mid);">"Wist je dat 68% van de MKB-bedrijven nog steeds offerte-aanvragen handmatig verwerkt? Wij doen dat anders..."</div>
       </div>
       <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;">
-        <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); margin-bottom: 4px;">Do 20 mrt — Facebook</div>
+        <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); margin-bottom: 4px;">Do 20 mrt — X</div>
         <div style="font-size: 0.82rem; color: var(--text-mid);">"Nieuwe week, nieuwe klant aan boord 🎉 Welkom bij afdeling.ai!"</div>
       </div>
       <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; opacity: 0.5;">
@@ -72,7 +71,7 @@ Sarah lost dat op. Zij stopt niet.
 
 ## Wat Sarah nodig heeft om te starten
 
-We houden een onboardinggesprek van 45 minuten. Daarin bespreken we:
+We houden een onboardingsgesprek van 45 minuten. Daarin bespreken we:
 
 - Wie jullie klanten zijn en wat hen aanspreekt
 - Jouw tone of voice (formeel, persoonlijk, zakelijk, humoristisch?)
@@ -85,9 +84,9 @@ Daarna schrijft Sarah haar eerste posts — en jij geeft goedkeuring voordat er 
 
 Sarah is ideaal voor bedrijven die:
 
-- Weten dat social media belangrijk is maar er nooit tijd voor maken
-- Genoeg van social media om de paar weken iets willen plaatsen
-- Hun bedrijf zichtbaarder willen maken zonder een marketingmedewerker in te huren
-- Al eens geprobeerd hebben zelf te posten maar het niet volgehouden
+- begrijpen dat social media belangrijk is, maar er simpelweg nooit de tijd voor vinden;
+- klaar zijn met de onregelmaat van slechts om de paar weken iets willen plaatsen;
+- hun zichtbaarheid willen vergroten zonder een dure marketingmedewerker aan te hoeven nemen;
+- al eens hebben geprobeerd zelf te posten, maar merkten dat dit op de lange termijn niet vol te houden is.
 
-**Sarah kost €397 per maand. Minder dan één dag inhuurkracht van een junior marketeer.**
+**Voor minder dan de kosten van één dag een junior marketeer inhuurkracht, heb je met Sarah een hele maand lang een vaste kracht voor je marketing.**
