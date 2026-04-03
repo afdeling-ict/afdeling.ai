@@ -31,15 +31,15 @@ hugo
 | URL | Pagina | Type |
 |---|---|---|
 | `/` | Homepage | index.html |
-| `/lisa` | Lisa — AI Offertespecialist | product |
-| `/thomas` | Thomas — AI Klantenservice | product |
-| `/sarah` | Sarah — AI Social Media Manager | product |
-| `/blog` | Blog overzicht | blog list |
-| `/blog/[slug]` | Blog post | blog single |
-| `/over` | Over afdeling.ai | over |
-| `/contact` | Contact & kennismakingsgesprek | contact |
-| `/privacy` | Privacybeleid | default single |
-| `/voorwaarden` | Algemene voorwaarden | default single |
+| `/lisa/` | Lisa — AI Offertespecialist | product |
+| `/thomas/` | Thomas — AI Klantenservice | product |
+| `/sarah/` | Sarah — AI Social Media Manager | product |
+| `/blog/` | Blog overzicht | blog list |
+| `/blog/[slug]/` | Blog post | blog single |
+| `/over/` | Over afdeling.ai | over |
+| `/contact/` | Contact & kennismakingsgesprek | contact |
+| `/privacy/` | Privacybeleid | default single |
+| `/voorwaarden/` | Algemene voorwaarden | default single |
 
 ---
 

@@ -41,12 +41,20 @@
         <h3 style="margin-bottom: 8px; font-size: 1.3rem;">Stuur een bericht</h3>
         <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 28px;">We nemen binnen 1 werkdag contact op.</p>
 
-        <form action="https://formspree.io/f/placeholder" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+        <div data-fs-success style="display: none; background: var(--hl-green, #B8F5A0); border: 1.5px solid #6fcf6f; border-radius: 12px; padding: 20px 24px; font-size: 0.95rem; color: var(--text);">
+          ✓ Bericht verzonden! We nemen binnen 1 werkdag contact op.
+        </div>
+        <div data-fs-error style="display: none; background: #fff0f0; border: 1.5px solid #f5a0a0; border-radius: 12px; padding: 20px 24px; font-size: 0.95rem; color: var(--text);">
+          Er is iets misgegaan. Probeer het opnieuw of mail naar <a href="mailto:hallo@afdeling.ai" style="color: var(--text); text-decoration: underline;">hallo@afdeling.ai</a>.
+        </div>
+
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 16px;">
           <div>
             <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: var(--text);">Naam *</label>
-            <input type="text" name="naam" required placeholder="Jan de Boer"
+            <input type="text" name="naam" required placeholder="Jan de Boer" data-fs-field
               style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 0.95rem; font-family: var(--font-sans); background: var(--bg); color: var(--text); transition: border-color 0.15s; outline: none;"
               onfocus="this.style.borderColor='var(--text)'" onblur="this.style.borderColor='var(--border)'">
+            <span data-fs-error="naam" style="font-size: 0.8rem; color: #c0392b; margin-top: 4px; display: block;"></span>
           </div>
           <div>
             <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: var(--text);">Bedrijfsnaam</label>
@@ -56,9 +64,10 @@
           </div>
           <div>
             <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: var(--text);">E-mailadres *</label>
-            <input type="email" name="email" required placeholder="jou@bedrijf.nl"
+            <input type="email" name="email" required placeholder="jou@bedrijf.nl" data-fs-field
               style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 0.95rem; font-family: var(--font-sans); background: var(--bg); color: var(--text); transition: border-color 0.15s; outline: none;"
               onfocus="this.style.borderColor='var(--text)'" onblur="this.style.borderColor='var(--border)'">
+            <span data-fs-error="email" style="font-size: 0.8rem; color: #c0392b; margin-top: 4px; display: block;"></span>
           </div>
           <div>
             <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: var(--text);">Waarin ben je geïnteresseerd?</label>
@@ -74,16 +83,23 @@
           </div>
           <div>
             <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: var(--text);">Bericht</label>
-            <textarea name="bericht" rows="4" placeholder="Vertel ons kort over jouw situatie..."
+            <textarea name="bericht" rows="4" placeholder="Vertel ons kort over jouw situatie..." data-fs-field
               style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 0.95rem; font-family: var(--font-sans); background: var(--bg); color: var(--text); resize: vertical; transition: border-color 0.15s; outline: none;"
               onfocus="this.style.borderColor='var(--text)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+            <span data-fs-error="bericht" style="font-size: 0.8rem; color: #c0392b; margin-top: 4px; display: block;"></span>
           </div>
 
-          <button type="submit" class="btn btn-primary" style="justify-content: center; padding: 14px;">
+          <button type="submit" data-fs-submit-btn class="btn btn-primary" style="justify-content: center; padding: 14px;">
             Verstuur bericht →
           </button>
           <p style="font-size: 0.78rem; color: var(--muted); text-align: center;">Door te versturen ga je akkoord met ons <a href="/privacy/" style="color: var(--text); text-decoration: underline; text-underline-offset: 2px;">privacybeleid</a>.</p>
         </form>
+
+        <script>
+          window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+          formspree('initForm', { formElement: '#contact-form', formId: 'mjgpavyv' });
+        </script>
+        <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
       </div>
 
     </div>
