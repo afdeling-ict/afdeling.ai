@@ -1,7 +1,7 @@
 ---
 title: "Waarom de eerste offerte bijna altijd wint"
 description: "Onderzoek toont aan dat bedrijven die als eerste reageren op een offerteaanvraag 5 tot 8 keer meer kans hebben op de opdracht. Hoe zorg jij dat jij altijd eerste bent?"
-date: 2025-03-10
+date: 2026-01-13
 emoji: "🏆"
 category: "Offertes"
 ---
@@ -46,7 +46,7 @@ Stel je ontvangt gemiddeld twintig offerteaanvragen per maand. Jouw gemiddelde o
 
 Als snellere respons jouw conversie met 5 procentpunt verhoogt — van 25% naar 30% — lever dat jou één extra opdracht per maand op. Dat is €3.000 per maand extra omzet.
 
-Lisa kost €297 per maand.
+Lisa kost €297 per maand op het moment dat dit artikel is geschreven.
 
 De rekensom is snel gemaakt.
 
