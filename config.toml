@@ -10,41 +10,34 @@ enableGitInfo = false
   tagline = "De AI Afdeling voor MKB"
   email = "hallo@afdeling.ai"
   ctaText = "Plan een gesprek"
-  ctaURL = "/contact"
+  ctaURL = "/contact/"
   author = "Farid Bouchdak"
 
 [menu]
   [[menu.main]]
-    name = "AI-werknemers"
-    url = "/werknemers"
+    name = "Lisa"
+    url = "/lisa/"
     weight = 1
   [[menu.main]]
-    name = "Lisa"
-    url = "/lisa"
-    weight = 2
-    parent = "AI-werknemers"
-  [[menu.main]]
     name = "Thomas"
-    url = "/thomas"
-    weight = 3
-    parent = "AI-werknemers"
+    url = "/thomas/"
+    weight = 2
   [[menu.main]]
     name = "Sarah"
-    url = "/sarah"
-    weight = 4
-    parent = "AI-werknemers"
+    url = "/sarah/"
+    weight = 3
   [[menu.main]]
     name = "Blog"
-    url = "/blog"
-    weight = 5
+    url = "/blog/"
+    weight = 4
   [[menu.main]]
     name = "Over"
-    url = "/over"
-    weight = 6
+    url = "/over/"
+    weight = 5
   [[menu.main]]
     name = "Contact"
-    url = "/contact"
-    weight = 7
+    url = "/contact/"
+    weight = 6
 
 [taxonomies]
   category = "categories"
