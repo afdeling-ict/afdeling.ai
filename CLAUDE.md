@@ -126,8 +126,8 @@ Highlighter-kleuren worden gebruikt als: tekstmarkering (`.hl` class), badge/tag
 
 ## Openstaande TODOs
 
-- [ ] `static/img/social-preview.png` aanmaken (1200×630px)
-- [ ] Formspree form-ID invullen in `layouts/contact/single.html`
-- [ ] KvK-nummer toevoegen aan over-pagina en Schema.org
+- [x] `static/img/social-preview.png` aanmaken (1200×630px)
+- [x] Formspree form-ID invullen in `layouts/contact/single.html` — `mjgpavyv`
+- [x] KvK-nummer toevoegen aan over-pagina en Schema.org — `30221015`
 - [ ] Plausible Analytics toevoegen in `head.html`
-- [ ] Google Search Console instellen na live gaan
+- [x] Google Search Console instellen na live gaan
