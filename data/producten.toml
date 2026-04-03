@@ -1,0 +1,27 @@
+# Prijzen en kerndata voor alle AI-werknemers.
+# Dit is de enige plek waar je prijzen aanpast.
+# Na wijziging: git add → git commit → git push → Cloudflare bouwt opnieuw.
+
+[lisa]
+  naam         = "Lisa"
+  rol          = "AI Offertespecialist"
+  emoji        = "📋"
+  prijs        = "297"
+  productClass = "lisa"
+  url          = "/lisa/"
+
+[thomas]
+  naam         = "Thomas"
+  rol          = "AI Klantenservice Assistent"
+  emoji        = "💬"
+  prijs        = "497"
+  productClass = "thomas"
+  url          = "/thomas/"
+
+[sarah]
+  naam         = "Sarah"
+  rol          = "AI Social Media Manager"
+  emoji        = "📣"
+  prijs        = "397"
+  productClass = "sarah"
+  url          = "/sarah/"

@@ -48,6 +48,8 @@ hugo
 ```
 afdeling.ai/
 ├── config.toml                         # Hugo config
+├── data/
+│   └── producten.toml                  # Prijzen & kerndata (single source of truth)
 ├── content/
 │   ├── _index.md                       # Homepage content
 │   ├── lisa.md                         # Lisa productpagina (type: product)
@@ -84,7 +86,7 @@ afdeling.ai/
     ├── js/main.js
     ├── img/
     │   ├── favicon.svg
-    │   └── social-preview.png          # Aanmaken: 1200×630px OG/Twitter Card
+    │   └── social-preview.png          # 1200×630px — OG/Twitter Card
     ├── _headers                        # Cloudflare Pages security headers
     ├── robots.txt                      # Crawler-instructies incl. 14 AI-bots
     ├── llms.txt                        # LLM/AI-crawler optimization (spec-conform)
@@ -169,24 +171,26 @@ Bestand aanmaken in `content/blog/[slug].md` → Hugo pikt het automatisch op.
 
 ---
 
+## Prijzen aanpassen
+
+Alle prijzen staan op **één plek**: `data/producten.toml`. Na een wijziging volstaat één commit — Hugo verwerkt de nieuwe prijzen automatisch in alle templates (homepage, Schema.org, contactformulier).
+
+Uitzondering: de `quickanswer` front matter in `content/thomas.md` bevat een hardcoded prijs als proza — die handmatig bijwerken.
+
+---
+
 ## Contactformulier
 
-Het contactformulier in `layouts/contact/single.html` gebruikt [Formspree](https://formspree.io). Vervang de placeholder:
-
-```html
-<form action="https://formspree.io/f/JOUW_FORM_ID" method="POST">
-```
-
-Gratis account op formspree.io → nieuw formulier → ID kopiëren.
+Het contactformulier gebruikt [Formspree](https://formspree.io) via Ajax (geen pagina-redirect na submit). Form-ID: `mjgpavyv`. De integratie zit volledig in `layouts/contact/single.html`.
 
 ---
 
 ## Openstaande taken
 
-- [ ] `static/img/social-preview.png` aanmaken (1200×630px) voor Open Graph / Twitter Card
-- [ ] Formspree form-ID invullen in `layouts/contact/single.html`
-- [ ] KvK-nummer toevoegen aan `content/over.md` en Schema.org in `head.html`
-- [ ] Google Search Console koppelen na live gaan
+- [x] `static/img/social-preview.png` aanmaken (1200×630px) voor Open Graph / Twitter Card
+- [x] Formspree form-ID invullen in `layouts/contact/single.html` — `mjgpavyv`
+- [x] KvK-nummer toevoegen aan over-pagina en Schema.org — `30221015`
+- [x] Google Search Console koppelen na live gaan
 - [ ] Plausible Analytics snippet toevoegen in `layouts/partials/head.html`
 
 ---

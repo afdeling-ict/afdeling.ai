@@ -112,10 +112,20 @@ Highlighter-kleuren worden gebruikt als: tekstmarkering (`.hl` class), badge/tag
 
 ---
 
+## Prijzen aanpassen
+
+Prijzen staan op **één plek**: `data/producten.toml`. Dit bestand is de single source of truth.
+Alle templates lezen hieruit via `site.Data.producten.lisa.prijs` (etc.). Na een wijziging volstaat één commit.
+
+Uitzondering: de `quickanswer` front matter in productpagina's bevat soms een hardcoded prijs als proza — die handmatig bijwerken bij een prijswijziging.
+
+---
+
 ## Bestanden die regelmatig worden bijgewerkt
 
 | Bestand | Wanneer |
 |---|---|
+| `data/producten.toml` | **Prijswijziging** — dit is de enige plek |
 | `content/blog/[slug].md` | Nieuwe blogpost |
 | `static/llms.txt` + `static/llms-full.txt` | Bij nieuwe producten of belangrijke wijzigingen |
 | `layouts/partials/head.html` | Bij nieuwe Schema.org types of SEO-verbeteringen |

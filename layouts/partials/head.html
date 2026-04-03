@@ -127,11 +127,11 @@
         "name": "Lisa — AI Offertespecialist",
         "description": "Automatische offertegeneratie vanuit e-mail binnen 2 minuten. Setup in 48 uur.",
         "url": "https://afdeling.ai/lisa",
-        "price": "297.00",
+        "price": "{{ site.Data.producten.lisa.prijs }}.00",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "297.00",
+          "price": "{{ site.Data.producten.lisa.prijs }}.00",
           "priceCurrency": "EUR",
           "billingIncrement": 1,
           "unitCode": "MON",
@@ -145,11 +145,11 @@
         "name": "Thomas — AI Klantenservice Assistent",
         "description": "24/7 klantenservice via chat en e-mail, getraind op bedrijfskennis.",
         "url": "https://afdeling.ai/thomas",
-        "price": "497.00",
+        "price": "{{ site.Data.producten.thomas.prijs }}.00",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "497.00",
+          "price": "{{ site.Data.producten.thomas.prijs }}.00",
           "priceCurrency": "EUR",
           "billingIncrement": 1,
           "unitCode": "MON",
@@ -163,11 +163,11 @@
         "name": "Sarah — AI Social Media Manager",
         "description": "Wekelijkse LinkedIn en Facebook content in de merkstem van het bedrijf.",
         "url": "https://afdeling.ai/sarah",
-        "price": "397.00",
+        "price": "{{ site.Data.producten.sarah.prijs }}.00",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "397.00",
+          "price": "{{ site.Data.producten.sarah.prijs }}.00",
           "priceCurrency": "EUR",
           "billingIncrement": 1,
           "unitCode": "MON",
@@ -275,6 +275,7 @@
 
 {{ else if eq .Type "product" }}
 <!-- 2b. SoftwareApplication + Service — Productpagina's (Lisa / Thomas / Sarah) -->
+{{ $productData := index site.Data.producten .Params.productClass }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -292,11 +293,11 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "{{ .Params.price }}.00",
+        "price": "{{ $productData.prijs }}.00",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "{{ .Params.price }}.00",
+          "price": "{{ $productData.prijs }}.00",
           "priceCurrency": "EUR",
           "billingIncrement": 1,
           "unitCode": "MON",

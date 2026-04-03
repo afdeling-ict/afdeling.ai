@@ -6,7 +6,7 @@ productClass: "thomas"
 emoji: "💬"
 role: "AI Klantenservice Assistent"
 firstName: "Thomas"
-quickanswer: "Thomas is een AI-werknemer van afdeling.ai die 24/7 klantvragen beantwoordt via website-chat en e-mail. Hij wordt getraind op de kennisbank van het bedrijf (FAQ, producten, prijzen) en escaleert complexe vragen met volledige context naar een menselijke medewerker. Prijs: €497 per maand inclusief setup en onderhoud."
+quickanswer: "Thomas is een AI-werknemer van afdeling.ai die 24/7 klantvragen beantwoordt via website-chat en e-mail. Hij wordt getraind op de kennisbank van het bedrijf (FAQ, producten, prijzen) en escaleert complexe vragen met volledige context naar een menselijke medewerker. Prijs: Een fractie van de gebruikelijke loonkosten inclusief setup en onderhoud."
 
 featuresHeading: "Klanten goed geholpen. Jij vrij van de inbox."
 featuresSub: "Thomas draait terwijl jij slaapt, vergadert, of op vakantie bent."
