@@ -181,14 +181,14 @@ Uitzondering: de `quickanswer` front matter in `content/thomas.md` bevat een har
 
 ## Contactformulier
 
-Het contactformulier gebruikt [Formspree](https://formspree.io) via Ajax (geen pagina-redirect na submit). Form-ID: `mjgpavyv`. De integratie zit volledig in `layouts/contact/single.html`.
+Het contactformulier gebruikt [Formspree](https://formspree.io) via Ajax (geen pagina-redirect na submit). Form-ID: `mvzvdvoz`. De integratie zit volledig in `layouts/contact/single.html`.
 
 ---
 
 ## Openstaande taken
 
 - [x] `static/img/social-preview.png` aanmaken (1200×630px) voor Open Graph / Twitter Card
-- [x] Formspree form-ID invullen in `layouts/contact/single.html` — `mjgpavyv`
+- [x] Formspree form-ID invullen in `layouts/contact/single.html` — `mvzvdvoz`
 - [x] KvK-nummer toevoegen aan over-pagina en Schema.org — `30221015`
 - [x] Google Search Console koppelen na live gaan
 - [ ] Plausible Analytics snippet toevoegen in `layouts/partials/head.html`

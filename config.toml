@@ -8,7 +8,7 @@ enableGitInfo = false
 [params]
   description = "Huur AI-werknemers voor jouw bedrijf. Lisa, Thomas en Sarah handelen offertes, klantenservice en social media af — zodat jij je focust op wat telt."
   tagline = "De AI Afdeling voor MKB"
-  email = "hallo@afdeling.ai"
+  email = "support@afdeling.ai"
   ctaText = "Plan een gesprek"
   ctaURL = "/contact/"
   author = "Farid Bouchdak"

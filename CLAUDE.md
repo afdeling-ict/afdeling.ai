@@ -11,7 +11,7 @@ Het product: Nederlandse MKB-bedrijven huren AI-werknemers in als maandabonnemen
 - **Thomas** (€497/mnd) — AI Klantenservice Assistent
 - **Sarah** (€397/mnd) — AI Social Media Manager
 
-**Eigenaar:** Farid Bouchdak (hallo@afdeling.ai) — ook eigenaar van faridbouchdak.com
+**Eigenaar:** Farid Bouchdak (support@afdeling.ai) — ook eigenaar van faridbouchdak.com
 
 ---
 
@@ -137,7 +137,7 @@ Uitzondering: de `quickanswer` front matter in productpagina's bevat soms een ha
 ## Openstaande TODOs
 
 - [x] `static/img/social-preview.png` aanmaken (1200×630px)
-- [x] Formspree form-ID invullen in `layouts/contact/single.html` — `mjgpavyv`
+- [x] Formspree form-ID invullen in `layouts/contact/single.html` — `mvzvdvoz`
 - [x] KvK-nummer toevoegen aan over-pagina en Schema.org — `30221015`
 - [ ] Plausible Analytics toevoegen in `head.html`
 - [x] Google Search Console instellen na live gaan
