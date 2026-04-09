@@ -25,7 +25,7 @@ Een overeenkomst komt tot stand op het moment dat de Klant akkoord gaat met een 
 
 - Abonnementen worden aangegaan voor onbepaalde tijd, tenzij schriftelijk anders overeengekomen.
 - Opzegging is mogelijk per maand, met inachtneming van een opzegtermijn van 30 dagen.
-- Opzegging dient schriftelijk te worden gedaan via support@afdeling.ai.
+- Opzegging dient schriftelijk te worden gedaan via support&#64;afdeling.ai.
 
 ## 5. Prijzen en betaling
 
@@ -68,4 +68,4 @@ afdeling.ai behoudt zich het recht voor deze voorwaarden te wijzigen. Wijziginge
 
 ## Vragen?
 
-Neem contact op via support@afdeling.ai.
+Neem contact op via support&#64;afdeling.ai.

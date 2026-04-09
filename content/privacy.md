@@ -8,7 +8,7 @@ Laatste update: 30 maart 2026
 
 ## Wie zijn wij?
 
-afdeling.ai is een handelsnaam van Farid Bouchdak, gevestigd in Nederland. Wij zijn bereikbaar via support@afdeling.ai.
+afdeling.ai is een handelsnaam van Farid Bouchdak, gevestigd in Nederland. Wij zijn bereikbaar via support&#64;afdeling.ai.
 
 ## Welke gegevens verzamelen wij?
 
@@ -36,7 +36,7 @@ Gegevens die je via het contactformulier verstrekt, bewaren wij maximaal 12 maan
 
 ## Jouw rechten
 
-Onder de AVG heb je het recht op inzage, rectificatie, verwijdering en bezwaar. Je kunt een verzoek indienen via support@afdeling.ai. Wij reageren binnen 30 dagen.
+Onder de AVG heb je het recht op inzage, rectificatie, verwijdering en bezwaar. Je kunt een verzoek indienen via support&#64;afdeling.ai. Wij reageren binnen 30 dagen.
 
 ## Beveiliging
 
@@ -44,4 +44,4 @@ Wij treffen passende technische en organisatorische maatregelen om jouw persoons
 
 ## Vragen?
 
-Heb je vragen over dit privacybeleid? Neem contact op via support@afdeling.ai.
+Heb je vragen over dit privacybeleid? Neem contact op via support&#64;afdeling.ai.
